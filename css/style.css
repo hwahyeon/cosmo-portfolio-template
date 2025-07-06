@@ -369,6 +369,7 @@ section {
   cursor: pointer;
 }
 
+
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -391,8 +392,11 @@ section {
   color: #333;
 }
 
-.social-links a img,
-.social-links i {
+.social-links a img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
   margin-right: 5px;
 }
 
