@@ -19,14 +19,29 @@
           <ul>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <button id="btn-english">English</button>
-            <button id="btn-korean">한국어</button>
+            <li><button id="lang-toggle">English</button></li>
           </ul>
         </nav>
       </header>
 
       <!-- Container for space background animation -->
       <div class="space" id="starContainer"></div>
+
+      <!-- Introduction -->
+      <section id="intro">
+        <h1 id="headline"></h1>
+        <p id="subheadline"></p>
+        <div class="stack">
+          <p id="introduction"></p>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="project-buttons" class="button-container"></div>
+        <div id="project-list"></div>
+      </section>
 
       <!-- Open Source -->
       <section id="opensource">
@@ -88,7 +103,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/dompurify@2/dist/purify.min.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/state.js"></script>
+    <script src="./js/intro.js"></script>
     <script src="./js/lang.js"></script>
     <script src="./js/universe.js"></script>
     <script src="./js/topBtn.js"></script>
