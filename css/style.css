@@ -60,7 +60,7 @@ header {
 }
 
 .navigation li {
-  margin: 0px 13px;
+  margin: 0px 3px;
 }
 
 .navigation a,
@@ -70,7 +70,7 @@ header {
   font-size: 1.2em;
   transition: color 0.3s ease;
   background-color: transparent;
-  margin: 0 13px;
+  margin: 0 10px;
 }
 
 .navigation a:hover,
