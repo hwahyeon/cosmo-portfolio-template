@@ -289,16 +289,15 @@ section {
 }
 
 @media (max-width: 600px) {
-  .contribution-table,
-  .contribution-table td,
   .contribution-table tr {
     display: block;
+    margin-bottom: 15px;
   }
 
-  .contribution-table .repo,
-  .contribution-table .contribute-number {
-    width: 100%;
-    padding: 8px 0;
+  .contribution-table td {
+    display: block;
+    width: 100% !important;
+    padding: 5px 0;
   }
 
   .contribution-table .repo {
