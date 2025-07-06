@@ -1,4 +1,9 @@
 function applyMeta(meta) {
+  const origin = window.location.origin;
+  const ogImagePath = meta.ogImage.startsWith("http")
+    ? meta.ogImage
+    : `${origin}/${meta.ogImage}`;
+
   // Basic meta tags
   document.title = meta.title;
   document
@@ -12,7 +17,7 @@ function applyMeta(meta) {
     .setAttribute("content", meta.ogDescription);
   document
     .querySelector('meta[property="og:image"]')
-    .setAttribute("content", meta.ogImage);
+    .setAttribute("content", ogImagePath);
 
   // Contact Me section
   document.getElementById("contact-name").textContent = meta.contact.name || "";
