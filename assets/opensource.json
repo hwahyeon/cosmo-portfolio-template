@@ -1,0 +1,35 @@
+[
+  {
+    "repository": "username1/repository1",
+    "contributions": [
+      { "type": "issue", "number": 1 },
+      { "type": "issue", "number": 2 },
+      { "type": "pull", "number": 3 }
+    ]
+  },
+  {
+    "repository": "username2/repository2",
+    "contributions": [
+      { "type": "pull", "number": 12 },
+      { "type": "issue", "number": 23 }
+    ]
+  },
+  {
+    "repository": "username3/repository3",
+    "contributions": [
+      { "type": "issue", "number": 100 }
+    ]
+  },
+  {
+    "repository": "username4/repository4",
+    "contributions": [
+      { "type": "issue", "number": 999 }
+    ]
+  },
+  {
+    "repository": "username5/repository5",
+    "contributions": [
+      { "type": "issue", "number": 777 }
+    ]
+  }
+]
