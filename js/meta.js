@@ -15,23 +15,49 @@ function applyMeta(meta) {
     .setAttribute("content", meta.ogImage);
 
   // Contact Me section
-  const emailText = `${meta.contact.email}`;
-  const locationText = `${meta.contact.location}`;
-
-  document.getElementById("contact-name").textContent = meta.contact.name;
-  document.getElementById("contact-email").textContent = meta.contact.email;
+  document.getElementById("contact-name").textContent = meta.contact.name || "";
+  document.getElementById("contact-email").textContent =
+    meta.contact.email || "";
   document.getElementById("contact-location").textContent =
-    meta.contact.location;
+    meta.contact.location || "";
 
-  document.getElementById("contact-linkedin").href = meta.contact.linkedin;
-  document.getElementById("contact-github").href = meta.contact.github;
-  document.getElementById("contact-npm").href = meta.contact.npm;
-  document.getElementById("contact-codepen").href = meta.contact.codepen;
+  const linkedin = document.getElementById("contact-linkedin");
+  const github = document.getElementById("contact-github");
+  const npm = document.getElementById("contact-npm");
+  const codepen = document.getElementById("contact-codepen");
+
+  if (meta.contact.linkedin) {
+    linkedin.href = meta.contact.linkedin;
+    linkedin.style.display = "inline-flex";
+  } else {
+    linkedin.style.display = "none";
+  }
+
+  if (meta.contact.github) {
+    github.href = meta.contact.github;
+    github.style.display = "inline-flex";
+  } else {
+    github.style.display = "none";
+  }
+
+  if (meta.contact.npm) {
+    npm.href = meta.contact.npm;
+    npm.style.display = "inline-flex";
+  } else {
+    npm.style.display = "none";
+  }
+
+  if (meta.contact.codepen) {
+    codepen.href = meta.contact.codepen;
+    codepen.style.display = "inline-flex";
+  } else {
+    codepen.style.display = "none";
+  }
 
   // Footer section
-  document.getElementById("footer-quote").textContent = meta.footer.quote;
+  document.getElementById("footer-quote").textContent = meta.footer.quote || "";
   document.getElementById("footer-copyright").textContent =
-    meta.footer.copyright;
+    meta.footer.copyright || "";
 }
 
 fetch("./assets/meta.json")
