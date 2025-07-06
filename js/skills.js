@@ -2,7 +2,7 @@ function renderSkills(data) {
   const container = document.querySelector(".skills-container");
   container.innerHTML = "";
 
-  data.forEach(skill => {
+  data.forEach((skill) => {
     const div = document.createElement("div");
     div.className = "skill";
 
@@ -19,3 +19,7 @@ function renderSkills(data) {
     container.appendChild(div);
   });
 }
+
+fetch("./assets/skills.json")
+  .then((res) => res.json())
+  .then((data) => renderSkills(data));

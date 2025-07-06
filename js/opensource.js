@@ -2,7 +2,7 @@ function renderOpenSource(data) {
   const container = document.querySelector(".contribution-table tbody");
   container.innerHTML = "";
 
-  data.forEach(item => {
+  data.forEach((item) => {
     const row = document.createElement("tr");
 
     const repoTd = document.createElement("td");
@@ -17,7 +17,7 @@ function renderOpenSource(data) {
     contribTd.className = "contribute-number";
     contribTd.textContent = ": ";
 
-    item.contributions.forEach(contribution => {
+    item.contributions.forEach((contribution) => {
       const link = document.createElement("a");
       const typePath = contribution.type === "pull" ? "pull" : "issues";
       link.href = `https://github.com/${item.repository}/${typePath}/${contribution.number}`;
@@ -32,3 +32,7 @@ function renderOpenSource(data) {
     container.appendChild(row);
   });
 }
+
+fetch("./assets/opensource.json")
+  .then((res) => res.json())
+  .then(renderOpenSource);
