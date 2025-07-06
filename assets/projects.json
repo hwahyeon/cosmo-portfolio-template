@@ -1,0 +1,77 @@
+[
+  {
+    "id": "p001",
+    "category": "web",
+    "title": {
+      "ko": "예시 웹 프로젝트",
+      "en": "Example Web Project"
+    },
+    "description": {
+      "ko": "웹 프로젝트에 대한 예시 설명입니다.",
+      "en": "Example description for a web project."
+    },
+    "tech": ["React", "SCSS", "Recoil", "Python"],
+    "github": "https://github.com/username/example-web-project",
+    "website": "https://username.github.io/example-web-project"
+  },
+  {
+    "id": "p002",
+    "category": "web",
+    "title": {
+      "ko": "예시 포트폴리오",
+      "en": "Example Portfolio"
+    },
+    "description": {
+      "ko": "개인 포트폴리오 웹사이트 예시입니다.",
+      "en": "Example personal portfolio website."
+    },
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/username/example-portfolio",
+    "website": "https://username.github.io/example-portfolio"
+  },
+  {
+    "id": "p003",
+    "category": "npm",
+    "title": {
+      "ko": "예시 NPM 패키지",
+      "en": "Example NPM Package"
+    },
+    "description": {
+      "ko": "NPM 패키지에 대한 예시 설명입니다.",
+      "en": "Example description for an NPM package."
+    },
+    "tech": ["JavaScript", "npm"],
+    "github": "https://github.com/username/example-npm-package",
+    "website": "https://www.npmjs.com/package/example-npm-package"
+  },
+  {
+    "id": "p004",
+    "category": "etc",
+    "title": {
+      "ko": "예시 터미널 툴",
+      "en": "Example Terminal Tool"
+    },
+    "description": {
+      "ko": "터미널 툴에 대한 예시 설명입니다.",
+      "en": "Example description for a tool"
+    },
+    "tech": ["Python"],
+    "github": "https://github.com/username/example-terminal-tool",
+    "website": ""
+  },
+  {
+    "id": "p005",
+    "category": "web",
+    "title": {
+      "ko": "예시 블로그 템플릿",
+      "en": "Example Blog Template"
+    },
+    "description": {
+      "ko": "정적 블로그 템플릿 예시입니다.",
+      "en": "Example static blog template."
+    },
+    "tech": ["Next.js", "TailwindCSS", "MDX"],
+    "github": "https://github.com/username/example-blog-template",
+    "website": "https://username.github.io/example-blog-template"
+  }
+]
