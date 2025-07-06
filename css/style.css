@@ -253,6 +253,17 @@ section {
   display: none;
 }
 
+@media (max-width: 600px) {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-image {
+    max-height: none;
+  }
+}
+
 #opensource {
   padding: 50px 0;
   color: #fff;
