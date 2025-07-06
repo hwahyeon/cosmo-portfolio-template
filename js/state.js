@@ -1,0 +1,3 @@
+const AppState = {
+  lang: "en",
+};
