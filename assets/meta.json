@@ -1,0 +1,22 @@
+{
+  "title": "John Doe's Portfolio",
+  "description": "Portfolio page of frontend developer John Doe.",
+  "ogTitle": "John Doe | Portfolio",
+  "ogDescription": "Explore projects and open source contributions.",
+  "ogImage": "img/og-image.png",
+
+  "contact": {
+    "name": "John Doe",
+    "email": "john.dev@example.com",
+    "location": "Athens, Greece",
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe",
+    "npm": "https://npmjs.com/~johndoe",
+    "codepen": "https://codepen.io/johndoe"
+  },
+
+  "footer": {
+    "quote": "Keep building, keep improving.",
+    "copyright": "© 2025, John Doe"
+  }
+}
