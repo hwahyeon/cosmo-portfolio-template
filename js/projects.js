@@ -50,6 +50,9 @@ function renderProjects() {
     const desc = project.description[lang] || project.description["en"];
     const imagePath = `img/projects/${project.id}.png`;
 
+    const hasGithub = !!project.github;
+    const hasWebsite = !!project.website;
+
     const card = document.createElement("div");
     card.className = `project-card ${project.category}`;
 
@@ -57,17 +60,27 @@ function renderProjects() {
       <div class="project-image">
         <img src="${imagePath}" alt="project_picture" />
         ${
-          project.github
-            ? `<a href="${project.github}" target="_blank" class="project-overlay project-overlay-north">
-                 <img src="img/icons/github.svg" alt="GitHub" class="project-image-icon" />
-               </a>`
-            : ""
-        }
-        ${
-          project.website
-            ? `<a href="${project.website}" target="_blank" class="project-overlay project-overlay-south">
-                 <img src="img/icons/newwindow.svg" alt="Website" class="project-image-icon" />
-               </a>`
+          hasGithub && hasWebsite
+            ? `
+            <a href="${project.github}" target="_blank" class="project-overlay project-overlay-north">
+              <img src="img/icons/github.svg" alt="GitHub" class="project-image-icon" />
+            </a>
+            <a href="${project.website}" target="_blank" class="project-overlay project-overlay-south">
+              <img src="img/icons/newwindow.svg" alt="Website" class="project-image-icon" />
+            </a>
+          `
+            : hasGithub
+            ? `
+            <a href="${project.github}" target="_blank" class="project-overlay-single">
+              <img src="img/icons/github.svg" alt="GitHub" class="project-image-icon" />
+            </a>
+          `
+            : hasWebsite
+            ? `
+            <a href="${project.website}" target="_blank" class="project-overlay-single">
+              <img src="img/icons/newwindow.svg" alt="Website" class="project-image-icon" />
+            </a>
+          `
             : ""
         }
       </div>
@@ -79,14 +92,14 @@ function renderProjects() {
         </div>
         <div class="project-icons">
           ${
-            project.github
+            hasGithub
               ? `<a href="${project.github}" target="_blank">
                    <img src="img/icons/github.svg" alt="GitHub" />
                  </a>`
               : ""
           }
           ${
-            project.website
+            hasWebsite
               ? `<a href="${project.website}" target="_blank">
                    <img src="img/icons/newwindow.svg" alt="Website" />
                  </a>`
