@@ -26,7 +26,7 @@
       "en": "Example description for an NPM package."
     },
     "tech": ["JavaScript", "npm"],
-    "github": "https://github.com/username/example-npm-package",
+    "github": "",
     "website": "https://www.npmjs.com/package/example-npm-package"
   },
   {
