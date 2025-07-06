@@ -16,21 +16,6 @@
   },
   {
     "id": "p002",
-    "category": "web",
-    "title": {
-      "ko": "예시 포트폴리오",
-      "en": "Example Portfolio"
-    },
-    "description": {
-      "ko": "개인 포트폴리오 웹사이트 예시입니다.",
-      "en": "Example personal portfolio website."
-    },
-    "tech": ["HTML", "CSS", "JavaScript"],
-    "github": "https://github.com/username/example-portfolio",
-    "website": "https://username.github.io/example-portfolio"
-  },
-  {
-    "id": "p003",
     "category": "npm",
     "title": {
       "ko": "예시 NPM 패키지",
@@ -45,7 +30,7 @@
     "website": "https://www.npmjs.com/package/example-npm-package"
   },
   {
-    "id": "p004",
+    "id": "p003",
     "category": "etc",
     "title": {
       "ko": "예시 터미널 툴",
@@ -60,7 +45,7 @@
     "website": ""
   },
   {
-    "id": "p005",
+    "id": "p004",
     "category": "web",
     "title": {
       "ko": "예시 블로그 템플릿",
