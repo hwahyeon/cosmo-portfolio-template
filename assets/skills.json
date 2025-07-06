@@ -1,0 +1,26 @@
+[
+  {
+    "id": "javascript",
+    "name": "JavaScript"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript"
+  },
+  {
+    "id": "react",
+    "name": "React"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js"
+  },
+  {
+    "id": "django",
+    "name": "Django"
+  },
+  {
+    "id": "python",
+    "name": "Python"
+  }
+]
