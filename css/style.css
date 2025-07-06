@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -18,8 +24,17 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-color: #121212;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 header {
@@ -32,7 +47,6 @@ header {
   max-width: 1024px;
   margin: 0 auto;
   padding: 20px 50px 70px;
-  box-sizing: border-box;
 }
 
 .navigation ul {
@@ -56,12 +70,7 @@ header {
   font-size: 1.2em;
   transition: color 0.3s ease;
   background-color: transparent;
-}
-
-.navigation button {
-  border: none;
-  cursor: pointer;
-  margin: 0px 13px;
+  margin: 0 13px;
 }
 
 .navigation a:hover,
@@ -113,9 +122,6 @@ section {
   font-weight: bold;
   margin: 10px 0;
   padding: 10px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
   color: #8f8f8f;
   transition: all 0.3s ease;
 }
@@ -237,7 +243,6 @@ section {
 .project-icons img {
   width: 24px;
   height: 24px;
-  vertical-align: middle;
 }
 
 .project-icons a:hover img {
@@ -314,7 +319,7 @@ section {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 20px;
   justify-content: center;
   padding: 20px;
@@ -369,7 +374,6 @@ section {
   cursor: pointer;
 }
 
-
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -396,7 +400,6 @@ section {
   width: 20px;
   height: 20px;
   display: inline-block;
-  vertical-align: middle;
   margin-right: 5px;
 }
 
