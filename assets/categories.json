@@ -1,0 +1,8 @@
+{
+  "categories": {
+    "web": "Web",
+    "npm": "NPM",
+    "etc": "Other",
+    "all": "All"
+  }
+}
