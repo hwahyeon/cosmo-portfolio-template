@@ -9,10 +9,10 @@
     "name": "John Doe",
     "email": "john.dev@example.com",
     "location": "Athens, Greece",
-    "linkedin": "https://linkedin.com/in/johndoe",
-    "github": "https://github.com/johndoe",
-    "npm": "https://npmjs.com/~johndoe",
-    "codepen": "https://codepen.io/johndoe"
+    "linkedin": "https://linkedin.com/in/your-username",
+    "github": "https://github.com/your-username",
+    "npm": "https://npmjs.com/~your-username",
+    "codepen": "https://codepen.io/your-username"
   },
 
   "footer": {
