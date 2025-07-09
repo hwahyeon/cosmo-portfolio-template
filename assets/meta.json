@@ -18,5 +18,9 @@
   "footer": {
     "quote": "Keep building, keep improving.",
     "copyright": "© 2025, John Doe"
+  },
+
+  "extraLang": {
+    "label": "한국어"
   }
 }

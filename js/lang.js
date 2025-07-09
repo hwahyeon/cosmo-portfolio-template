@@ -1,5 +1,12 @@
+fetch("./assets/meta.json")
+  .then((res) => res.json())
+  .then((meta) => {
+    extraLangLabel = meta.extraLang?.label || "Other Language";
+    updateLangButton();
+  });
+
 function toggleLanguage() {
-  AppState.lang = AppState.lang === "en" ? "ko" : "en";
+  AppState.lang = AppState.lang === "en" ? "ex" : "en";
   renderProjects();
   loadIntroduction();
   updateLangButton();
@@ -7,7 +14,8 @@ function toggleLanguage() {
 
 function updateLangButton() {
   const btn = document.getElementById("lang-toggle");
-  btn.textContent = AppState.lang === "en" ? "한국어" : "English";
+  if (!btn) return;
+  btn.textContent = AppState.lang === "en" ? extraLangLabel : "English";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
