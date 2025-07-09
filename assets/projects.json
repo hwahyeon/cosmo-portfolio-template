@@ -3,12 +3,12 @@
     "id": "p001",
     "category": "web",
     "title": {
-      "ko": "예시 웹 프로젝트",
-      "en": "Example Web Project"
+      "en": "Example Web Project",
+      "ex": "예시 웹 프로젝트"
     },
     "description": {
-      "ko": "웹 프로젝트에 대한 예시 설명입니다.",
-      "en": "Example description for a web project."
+      "en": "Example description for a web project.",
+      "ex": "웹 프로젝트에 대한 예시 설명입니다."
     },
     "tech": ["React", "SCSS", "Recoil", "Python"],
     "github": "https://github.com/username/example-web-project",
@@ -18,12 +18,12 @@
     "id": "p002",
     "category": "npm",
     "title": {
-      "ko": "예시 NPM 패키지",
-      "en": "Example NPM Package"
+      "en": "Example NPM Package",
+      "ex": "예시 NPM 패키지"
     },
     "description": {
-      "ko": "NPM 패키지에 대한 예시 설명입니다.",
-      "en": "Example description for an NPM package."
+      "en": "Example description for an NPM package.",
+      "ex": "NPM 패키지에 대한 예시 설명입니다."
     },
     "tech": ["JavaScript", "npm"],
     "github": "",
@@ -33,12 +33,12 @@
     "id": "p003",
     "category": "etc",
     "title": {
-      "ko": "예시 터미널 툴",
-      "en": "Example Terminal Tool"
+      "en": "Example Terminal Tool",
+      "ex": "예시 터미널 툴"
     },
     "description": {
-      "ko": "터미널 툴에 대한 예시 설명입니다.",
-      "en": "Example description for a tool"
+      "en": "Example description for a tool",
+      "ex": "터미널 툴에 대한 예시 설명입니다."
     },
     "tech": ["Python"],
     "github": "https://github.com/username/example-terminal-tool",
@@ -48,12 +48,12 @@
     "id": "p004",
     "category": "web",
     "title": {
-      "ko": "예시 블로그 템플릿",
-      "en": "Example Blog Template"
+      "en": "Example Blog Template",
+      "ex": "예시 블로그 템플릿"
     },
     "description": {
-      "ko": "정적 블로그 템플릿 예시입니다.",
-      "en": "Example static blog template."
+      "en": "Example static blog template.",
+      "ex": "정적 블로그 템플릿 예시입니다."
     },
     "tech": ["Next.js", "TailwindCSS", "MDX"],
     "github": "https://github.com/username/example-blog-template",
